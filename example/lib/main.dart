@@ -16,7 +16,7 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> {
 
-	Locale _locale = window.locale;
+	Locale _locale = PlatformDispatcher.instance.locale;
 	Locale get locale => _locale;
 
 	@override

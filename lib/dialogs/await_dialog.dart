@@ -40,8 +40,8 @@ Future<T?> showAwaitDialog<T>(BuildContext context, {
 		context: context, 
 		builder: (context) {
 
-			return WillPopScope(
-				onWillPop: () => Future.value(false),
+			return PopScope(
+				canPop: false,
 				child: AwaitDialog<T>(
 					key: key,
 					message: message, 

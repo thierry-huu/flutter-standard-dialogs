@@ -39,8 +39,8 @@ Future<T?> showBasicDialog<T>(BuildContext context, {
 		context: context, 
 		builder: (context) {
 
-			return WillPopScope(
-				onWillPop: () => Future.value(barrierDismissible),
+			return PopScope(
+				canPop: barrierDismissible,
 				child: AlertDialog(
 					title: title,
 					content: content,

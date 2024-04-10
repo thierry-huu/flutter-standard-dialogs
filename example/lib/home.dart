@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
 
 							Padding(
 								padding: const EdgeInsets.symmetric(vertical: 10),
-								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.language], style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center)),
+								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.language], style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center)),
 
 							Flex(
 								direction: Axis.horizontal,
@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
 							// BASIC DIALOGS
 							Padding(
 								padding: const EdgeInsets.symmetric(vertical: 10),
-								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.basic], style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center)),
+								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.basic], style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center)),
 
 							ElevatedButton(
 								onPressed: () => _showBasicDialogOnlyTitle(context), 
@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
 							// CHOICES DIALOGS
 							Padding(
 								padding: const EdgeInsets.symmetric(vertical: 10),
-								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.choice], style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center)),
+								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.choice], style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center)),
 							
 							ElevatedButton(
 								onPressed: () => _showChoicesDialogButton(context), 
@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
 							// RESULT DIALOGS
 							Padding(
 								padding: const EdgeInsets.symmetric(vertical: 10),
-								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.result], style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center)),
+								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.result], style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center)),
 							
 							ElevatedButton(
 								onPressed: () => _showSuccessDialog(context), 
@@ -131,7 +131,7 @@ class HomePage extends StatelessWidget {
 							// AWAIT DIALOGS
 							Padding(
 								padding: const EdgeInsets.symmetric(vertical: 10),
-								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.awaitDialog], style: Theme.of(context).textTheme.bodyText1, textAlign: TextAlign.center)),
+								child: Text(ExampleLocalizations.of(context)[TypesOfDialogues.awaitDialog], style: Theme.of(context).textTheme.bodyLarge, textAlign: TextAlign.center)),
 							
 							ElevatedButton(
 								onPressed: () => _showAwaitDialog(context), 

@@ -158,8 +158,8 @@ Future<T?> showResultDialog<T>(BuildContext context, {
 		context: context, 
 		builder: (context) {
 
-			return WillPopScope(
-				onWillPop: () => Future.value(barrierDismissible),
+			return PopScope(
+				canPop: barrierDismissible,
 				child: ResultDialog(
 					key: key,
 					backgroundColor: backgroundColor,

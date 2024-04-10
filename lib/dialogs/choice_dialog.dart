@@ -249,8 +249,8 @@ Future<List<T>?> _showChoicesDialog<T>(BuildContext context, {
 
 			}
 
-			return WillPopScope(
-				onWillPop: () => Future.value(barrierDismissible),
+			return PopScope(
+				canPop: barrierDismissible,
 				child: child
 			);
 
